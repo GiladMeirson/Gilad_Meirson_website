@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Create neural network</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+  #PlayBtn span{
+    font-size: 3.5vh
+
+  }
+  #PlayBtn{
+    width: 100%;
+  }
+  .post-thumb img {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  
+ </style>
+    <script>
+      function Href(path){
+       location.assign(path);
+      }
+     </script>
+  </head>
+
+  <body>
+    <!--/ Nav Star /-->
+    <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top"
+      id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll" href="#page-top">Gilad Meirson website</a>
+        <button class="navbar-toggler collapsed" type="button"
+          data-toggle="collapse" data-target="#navbarDefault"
+          aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle
+          navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="navbar-collapse collapse justify-content-end"
+          id="navbarDefault">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link js-scroll" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll" href="./index.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll" href="./index.html#Projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll" href="./index.html#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--/ Nav End /-->
+
+    <!--/ Intro Skew Star /-->
+    <div class="intro intro-single route bg-image" style="background-image:
+      url(img/overlay-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="intro-content display-table">
+        <div class="table-cell">
+          <div class="container">
+            <h2 class="intro-title mb-4">Project Details</h2>
+            <ol class="breadcrumb d-flex justify-content-center">
+              <li class="breadcrumb-item">
+                <a href="#">Home</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="./index.html#Projects">Projects</a>
+              </li>
+              <li class="breadcrumb-item active">DIY - Creating a neural network without code</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Intro Skew End /-->
+
+    <!--/ Section Blog-Single Star /-->
+    <section class="blog-wrapper sect-pt4" id="blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="post-box">
+              <div class="post-thumb">
+                <img src="img/Mnist.png" class="img-fluid" alt="">
+                
+              </div>
+              <div class="post-meta">
+                <h1 class="article-title">Creating a neural network + Mnist classification and digit generator</h1>
+                <ul>
+                  <li>
+                    <span class="ion-ios-person"></span>
+                    <a href="#">Gilad Meirson</a>
+                  </li>
+                  <li>
+                    <span class="ion-pricetag"></span>
+                    <a href="#">#AI #Neural-network #brainJS </a>
+                  </li>
+                  <li>
+                    <span class="ion-star"></span>
+                    <a href="#">4.9</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="article-content">
+                <p>
+                  <strong>Summary of the project:</strong><br>
+                  One of the amazing projects I got to do. <br>
+                  It started with me creating a platform to create a neural network for users who don't know code but do know the principles behind basic neural networks.                  <br> <br>
+                  <br>
+                  After that, to check if the platform works properly, I wanted to build a neural network that manages to classify digits 0-9. <br>
+                  That is, the user enters a digit into the input and the network should recognize which digit he entered <br>
+                  <br><br>
+                  Full disclosure - for the heavy algorithm I used a library called BrainJS which provides a variety of neural network functions such as building a network, training the network and prediction.
+                  <br><br>
+                  One thing led to another, and I had a crazy idea. <br>
+                  What would happen if we made the Mnist neuron network? (digit identification). <br>
+                  That is, instead of the user drawing a number and the network having to tell him what he drew, we will do the opposite, he will enter a number through input and the network will draw the number! That is, a generator of letters. <br>
+                  Admittedly in a simple way and without colors, but the principle behind it is not far from models that know how to create images for example. Another photo is attached below. <br>
+
+
+                </p>
+                <img src="img/mnist2.png" class="img-fluid" alt="">
+                <p>
+                  <strong>Website Instructions:</strong><br>
+                  The instructions are quite simple, at first you have to determine the architecture of the model you are building. <br>
+                  After that you have to train the model exactly as in the template that appears in step 2 (in JSON format). <br>
+                  After the training phase you can download the model as a native "function" and use it for predictions. <br>
+                  
+                  <br> <br>
+                  The instructions for using the MNIST I built are quite simple: <br>
+                  In the test mode you have to draw a number and the model will tell you which number you drew and in what percentage he is sure of it. <br>
+                  In the generator mode you have to enter a digit as input and the amount of noise you want to insert and the model will draw the digit you entered! <br>
+                </p>
+
+                <img src="img/NN.png" class="img-fluid" alt="">
+                <!-- <blockquote class="blockquote">
+                  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Integer posuere erat a ante.</p>
+                </blockquote> -->
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-md-4">
+            <div class="widget-sidebar sidebar-search">
+              <h5 class="sidebar-title">TRY NOW</h5>
+              <div class="sidebar-content">
+                <form>
+
+                  <span class="input-group-btn">
+                    <button
+                      onclick="Href(`https://giladmeirson.github.io/CreateNN/MLB/`)"
+                      id="PlayBtn" class="btn
+                      btn-secondary
+                      btn-outline-success" type="button">
+                      <span class="ion-android-happy"> Create NN</span>
+                    </button>
+
+                    <button style="margin-top: 25px;"
+                    onclick="Href(`https://giladmeirson.github.io/CreateNN/MLB/MnistExample/Mnist.html`)"
+                    id="PlayBtn" class="btn
+                    btn-secondary
+                    btn-outline-success" type="button">
+                    <span class="ion-android-happy"> Mnist App</span>
+                  </button>
+                  </span>
+
+                </form>
+              </div>
+            </div>
+
+            <div class="widget-sidebar widget-tags">
+              <h5 class="sidebar-title">Tags</h5>
+              <div class="sidebar-content">
+                <ul>
+                  <li>
+                    <a href="#">HTML</a>
+                  </li>
+                  <li>
+                    <a href="#">AI</a>
+                  </li>
+                  <li>
+                    <a href="#">Java-Script</a>
+                  </li>
+                  <li>
+                    <a href="#">Neural-Netwoek</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Brain-JS</a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/ Section Blog-Single End /-->
+
+    <!--/ Section Contact-Footer Star /-->
+    <section class="paralax-mf footer-paralax bg-image sect-mt4 route"
+      style="background-image: url(img/overlay-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="copyright-box">
+                <p class="copyright">&copy; Copyright <strong>Gilad Meirson</strong>.
+                  All Rights Reserved</p>
+                <div class="credits">
+
+                  Designed by <a href="./index.html">Gilad Meirson</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!--/ Section Contact-footer End /-->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div id="preloader"></div>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/popper/popper.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/counterup/jquery.waypoints.min.js"></script>
+    <script src="lib/counterup/jquery.counterup.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
