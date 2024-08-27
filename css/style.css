@@ -613,13 +613,17 @@ a:hover {
 
 .intro .overlay-itro {
   background-color: rgba(0, 0, 0, 0.6);
+  background-image: url('../img/mat.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
   top: 0;
   left: 0px;
   padding: 0;
   height: 100%;
   width: 100%;
-  opacity: .9;
+  opacity: .15;
+  
 }
 
 .intro .intro-title {
