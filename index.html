@@ -103,6 +103,11 @@
             var subject = document.getElementById("subject").value;
             var body = document.getElementById("message").value;
             var from = document.getElementById("email").value;
+            if (from == '' || body == '' || subject == '') {
+                swal("Error", "Please fill all the fields", "error");
+                return;
+              
+            }
             setTimeout(ClearInputs,750);
 
 
@@ -683,7 +688,36 @@
           <!-- EXAMPLE END  -->
 
 
+          <!-- EXAMPLE START -->
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="img/rcp.png" data-lightbox="gallery-mf">
+                <div class="work-img">
+                  <img src="img/rcp.png" alt=""
+                    class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Rock Paper Scissors Simulation</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">#simulation #Interactive</span>  / <span
+                        class="w-date">25 Jan. 2024</span>
+                    </div>
+                  </div>
 
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span onclick="Href('./rcp.html')" class="C-on
+                        ion-android-folder"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- EXAMPLE END  -->
 
 
 
@@ -1414,7 +1448,7 @@
                   <div class="col-md-6">
                     <div class="title-box-2">
                       <h5 class="title-left">
-                        Send Message Us
+                        Send me a message
                       </h5>
                     </div>
                     <div>
